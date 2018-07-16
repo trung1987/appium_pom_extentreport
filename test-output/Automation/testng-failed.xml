@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Automation]" parallel="tests">
+  <listeners>
+    <listener class-name="utils.Listeners.TestListener"/>
+    <listener class-name="utils.Listeners.AnnotationTransformer"/>
+  </listeners>
+  <test thread-count="2" name="Appointment_demo(failed)" parallel="tests">
+    <parameter name="appActivity" value="com.active.appointment.MainActivity"/>
+    <parameter name="appPackage" value="com.active.appointment.dev"/>
+    <parameter name="Accout" value="STT4"/>
+    <parameter name="Pass" value="123456"/>
+    <parameter name="port" value="4726"/>
+    <parameter name="appName" value="2018071013_2.0.0__testRelease_Appointment.apk"/>
+    <parameter name="id" value="H6NPCV040630VU6"/>
+    <classes>
+      <class name="TestCase.loginTestPage">
+        <methods>
+          <include name="teardown"/>
+          <include name="InvalidLoginTest_FailCaseToCheckAlert" invocation-numbers="0"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- TestCase.loginTestPage -->
+    </classes>
+  </test> <!-- Appointment_demo(failed) -->
+</suite> <!-- Failed suite [Automation] -->

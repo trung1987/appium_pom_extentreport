@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="Automation" verbose="1" parallel="tests"  thread-count="2" >
+	<listeners>
+        <listener class-name="utils.Listeners.TestListener"/>
+        <listener class-name="utils.Listeners.AnnotationTransformer"/>
+    </listeners>
+	<test name="Appointment_demo"  >
+	 	<parameter name="port" value="4726" />
+	 	<!-- <parameter name="id" value="H6NPCV040630VU6" /> -->
+	 	<parameter name="id" value="0123456789ABCDEF" />
+	 	
+	 	<parameter name="appName" value="2018071013_2.0.0__testRelease_Appointment.apk" />
+	 	<parameter name="appActivity" value="com.active.appointment.MainActivity" />
+	 	<parameter name="appPackage" value="com.active.appointment.dev" />
+	 	<parameter name="Accout" value="STT4" />
+	 	<parameter name="Pass" value="123456" />
+	 	<classes>
+	   		 <class name="TestCase.loginTestPage" />  
+	   		 <!-- <class name="TestCase.Appointment" /> -->
+	   	</classes>
+	 </test>
+  
+</suite>
