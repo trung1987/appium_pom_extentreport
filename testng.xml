@@ -7,7 +7,7 @@
     </listeners>
 	<test name="Appointment_demo"  >
 	 	<parameter name="port" value="4726" />
-	 	<!-- <parameter name="id" value="H6NPCV040630VU6" /> -->
+	 	
 	 	<parameter name="id" value="0123456789ABCDEF" />
 	 	
 	 	<parameter name="appName" value="2018071013_2.0.0__testRelease_Appointment.apk" />
